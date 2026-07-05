@@ -29,7 +29,7 @@
   # Defines for default states.  These can be changed on the command line.
   # -D FLAG=VALUE
   #
-  DEFINE SECURE_BOOT_ENABLE      = FALSE
+  DEFINE SECURE_BOOT_ENABLE      = TRUE
   DEFINE SMM_REQUIRE             = FALSE
   DEFINE QEMU_PV_VARS            = FALSE
   DEFINE STANDALONE_MM_ENABLE    = FALSE
@@ -42,7 +42,7 @@
   #
   # Shell can be useful for debugging but should not be enabled for production
   #
-  DEFINE BUILD_SHELL             = TRUE
+  DEFINE BUILD_SHELL             = FALSE
 
   #
   # Network definition
@@ -53,7 +53,7 @@
   DEFINE NETWORK_ALLOW_HTTP_CONNECTIONS = TRUE
   DEFINE NETWORK_ISCSI_ENABLE           = TRUE
   DEFINE NETWORK_ISCSI_DEFAULT_ENABLE   = FALSE
-  DEFINE NETWORK_PXE_BOOT_ENABLE        = TRUE
+  DEFINE NETWORK_PXE_BOOT_ENABLE        = FALSE
 
 !include NetworkPkg/NetworkDefines.dsc.inc
 
